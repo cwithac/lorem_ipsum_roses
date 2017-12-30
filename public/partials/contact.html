@@ -5,7 +5,7 @@
   <label for="first-name">First Name</label>
   <input id="first-name" type="text" pattern="^[a-zA-Z]+$" placeholder="May only contain a-z" ng-model="ctrl.contactData.firstName" required/></br>
   <label for="last-name">Last Name</label>
-  <input id="last-name" type="text" pattern="^[A-Za-z',]+$" placeholder="May only contain a-z, - and ' " ng-model="ctrl.contactData.lastName" required/></br>
+  <input id="last-name" type="text" pattern="^[A-Za-z'-]+$" placeholder="May only contain a-z, - and ' " ng-model="ctrl.contactData.lastName" required/></br>
   <label for="e-mail">E-Mail</label>
   <input id="e-mail" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Valid E-Mail Address" ng-model="ctrl.contactData.email" required/></br>
   <label for="zip-code">Zip Code</label>
