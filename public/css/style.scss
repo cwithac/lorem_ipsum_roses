@@ -12,7 +12,6 @@ $meddon: 'Meddon', cursive;
   align-items: center;
   font-family: $cinzel;
   position: sticky;
-  top: 0;
   z-index: 2;
 }
 
@@ -39,6 +38,7 @@ body {
 header {
   @extend .header-footer;
   justify-content: flex-end;
+  top: 0;
   img {
     height: 45px;
     padding-top: 5px;
@@ -139,13 +139,24 @@ span {
     font-family: $meddon;
     color: $dark-red;
     padding-top: 2%;
+    text-align: center;
   }
   h2 {
-    font-size: 1em;
+    font-size: .75em;
     font-family: $cinzel;
     color: $white;
     padding-top: 2%;
     padding-bottom: 5%;
+    width: 60%;
+    margin: 0 auto;
+  }
+  h6 {
+    font-size: .5em;
+    font-family: $cinzel;
+    color: $white;
+    width: 85%;
+    margin: 0 auto 10% auto;
+    text-align: center;
   }
 }
 
@@ -178,13 +189,22 @@ input[type="submit"]:hover {
 }
 
 footer {
-  @extend .header-footer;
-  justify-content: center;
-  margin-top: 200px;
-  font-family: $meddon;
+  width: 100%;
   img {
     height: 45px;
     padding: 5px;
+  }
+}
+
+.footer-row {
+  @extend .header-footer;
+  justify-content: center;
+  font-family: $meddon;
+  h6 {
+    font-family: $cinzel;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: -25px;
   }
 }
 
