@@ -161,4 +161,46 @@ footer:hover {
   cursor: pointer;
   color: #DDDDDD; }
 
+@media (max-width: 830px) {
+  .hero {
+    height: 400px; }
+    .hero .hero-text h1 {
+      font-size: 4em; }
+    .hero .hero-text h2 {
+      font-size: .75em; }
+
+  .header-footer, header, .footer-row {
+    height: 25px;
+    display: flex; }
+
+  header img {
+    height: 20px;
+    padding-top: 2px;
+    padding-right: 10px; }
+
+  .footer-row h6 {
+    margin-top: 5%;
+    margin-bottom: 5%; } }
+@media (max-width: 650px) {
+  .hero {
+    height: 300px; }
+    .hero .hero-text h1 {
+      font-size: 3em; }
+    .hero .hero-text h2 {
+      font-size: .5em; } }
+@media (max-width: 400px) {
+  .hero {
+    height: 200px; }
+    .hero .hero-text h1 {
+      font-size: 2em; }
+    .hero .hero-text h2 {
+      font-size: .5em; }
+
+  header {
+    justify-content: space-around; }
+
+  .footer-row h6 {
+    margin-top: 10%;
+    margin-bottom: 10%; } }
+
 /*# sourceMappingURL=style.css.map */
