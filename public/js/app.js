@@ -15,11 +15,11 @@ app.controller('MainController', ['$http', function($http){
       method: 'POST',
       data: this.contactData
     }).then(response => {
-      console.log(response.data);
+      // console.log(response.data);
       this.contactData = {};
       this.message = 'Thank you for your submission.'
     }, ex => {
-      console.log(ex.data.err);
+      // console.log(ex.data.err);
     }).catch(err => this.error = "404");
   };
 
