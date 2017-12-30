@@ -14,7 +14,10 @@ app.controller('MainController', ['$http', function($http){
       data: this.contactData
     }).then(response => {
       console.log(response.data);
-    })
+      this.contactData = {};
+    }, ex => {
+      console.log(ex.data.err);
+    }).catch(err => this.error = "404");
   };
 
   this.showContactPage = () => {
