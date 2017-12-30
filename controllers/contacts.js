@@ -3,7 +3,7 @@ const contacts = express.Router();
 
 const Contact = require('../models/contacts.js');
 
-contacts.get('/', async (req, res) => {
+contacts.get('/administrator', async (req, res) => {
   try {
     const allContacts = await Contact.find().sort({lastName: 1});
     res.status(200).json(allContacts);
