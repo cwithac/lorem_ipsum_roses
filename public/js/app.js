@@ -19,14 +19,3 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
   });
 
 }]); //
-
-// window.onscroll = function() {myFunction()};
-// const header = document.getElementById("navigation");
-// const sticky = header.offsetTop;
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// };
