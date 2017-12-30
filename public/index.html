@@ -17,7 +17,7 @@
   <body ng-controller='MainController as ctrl'>
     <header class="sticky" ng-include=" 'partials/header.html' "></header>
     <main ng-if="ctrl.showLanding" ng-include=" 'partials/landing.html' "></main>
-    <section ng-if="ctrl.showContact" ng-view></section>
+    <section id="contact" ng-if="ctrl.showContact" ng-view></section>
     <footer ng-click="ctrl.showLandingPage();" ng-include=" 'partials/footer.html' "></footer>
   </body>
 </html>

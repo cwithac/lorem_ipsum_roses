@@ -87,7 +87,7 @@ header h2:hover {
   font-family: 'Meddon', cursive;
   color: #7a0408;
   cursor: pointer;
-  border-top: 1px solid white;
+  border-top: 1px solid #FFFFFF;
   padding-top: 2%; }
 
 #lorem h3:hover, #sub-lorem h3:hover, span {
@@ -96,6 +96,41 @@ header h2:hover {
 #lorem p #sub-lorem p {
   text-align: left;
   line-height: normal; }
+
+#contact {
+  width: 80%;
+  margin: 0 auto; }
+
+#contact > h1 {
+  font-size: 2em;
+  font-family: 'Meddon', cursive;
+  color: #7a0408;
+  padding-top: 2%; }
+
+#contact > h2 {
+  font-size: 1em;
+  font-family: 'Cinzel', serif;
+  color: #FFFFFF;
+  padding-top: 2%;
+  padding-bottom: 5%; }
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+form > label {
+  font-family: 'Cinzel', serif; }
+
+form > input {
+  width: 40%; }
+
+input[type="submit"] {
+  width: 25%; }
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  color: #7a0408; }
 
 footer {
   justify-content: center;
