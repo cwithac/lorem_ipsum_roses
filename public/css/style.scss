@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -9,6 +10,7 @@ main {
 }
 
 .hero {
+  font-family: 'Meddon', cursive;
   width: 100%;
   height: 500px;
   text-align: center;
@@ -18,11 +20,9 @@ main {
 }
 
 .hero > .hero-text {
-  margin: auto;
   position: absolute;
   text-align: center;
-  position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -30,11 +30,12 @@ main {
 }
 
 .hero-text > h1 {
-  font-size: 4.5em;
+  font-size: 5em;
+  white-space: nowrap;
 }
 
 .hero-text > h2 {
-  font-size: 2em;
+  font-size: 1.25em;
 }
 
 .hero img {
