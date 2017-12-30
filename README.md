@@ -18,8 +18,8 @@
 - [Google Fonts: Meddon](https://fonts.google.com/specimen/Meddon)
 - [Google Fonts: Cinzel](https://fonts.google.com/specimen/Cinzel)
 - [Favicon](http://www.favicon.cc/?action=icon&file_id=910285)
-- Contact Form [1](http://www.freeformatter.com/usa-state-list-html-select.html), [2](https://www.w3schools.com/tags/att_input_pattern.asp), [3](https://stackoverflow.com/questions/160550/zip-code-us-postal-code-validation), [4](https://stackoverflow.com/questions/5327206/regex-match-digits-comma-and-semicolon)
 
-![image](#))
+
+![image](https://i.imgur.com/4FjZjzw.png)
 
 Microsite Challenge completed for [Octagon](http://www.octagon.com/).
