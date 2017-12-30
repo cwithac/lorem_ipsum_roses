@@ -33,16 +33,13 @@ header h2:hover {
   cursor: pointer;
   color: #DDDDDD; }
 
-main {
-  width: 100%;
-  overflow: hidden; }
-
 .hero {
   width: 100%;
   height: 500px;
   margin: 0 auto;
   position: relative;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  overflow: hidden; }
 
 .hero > .hero-text {
   position: absolute;
