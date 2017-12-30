@@ -6,8 +6,8 @@
 ## Technologies Used
 
 - NPM Express
-- MongoDB
-- AngularJS
+- MongoDB, Mongoose (GET/POST)
+- AngularJS (Routing, Partials)
 - CSS SASS
 
 ## Resources
