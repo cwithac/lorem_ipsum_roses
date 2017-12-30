@@ -17,6 +17,9 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(express.static('public'));
 
+const contactsController = require('./controllers/contacts.js');
+app.use('/contacts', contactsController);
+
 app.listen(PORT, () => {
 	console.log('listening on ' + PORT);
 });
