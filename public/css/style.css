@@ -7,7 +7,7 @@ body {
   background-color: #000000;
   color: #FFFFFF; }
 
-header, footer {
+header {
   background-color: #000000;
   height: 55px;
   display: flex;
@@ -17,21 +17,17 @@ header, footer {
   position: sticky;
   top: 0;
   z-index: 2; }
-
-header img {
-  height: 45px;
-  padding-top: 5px; }
-
-header h2 {
-  color: #FFFFFF;
-  font-size: .75em; }
-
-header h2, header img {
-  padding-right: 20px; }
-
-header h2:hover {
-  cursor: pointer;
-  color: #DDDDDD; }
+  header img {
+    height: 45px;
+    padding-top: 5px;
+    padding-right: 20px; }
+  header h2 {
+    color: #FFFFFF;
+    font-size: .75em;
+    padding-right: 20px; }
+  header h2:hover {
+    cursor: pointer;
+    color: #DDDDDD; }
 
 .hero {
   width: 100%;
@@ -40,27 +36,23 @@ header h2:hover {
   position: relative;
   color: #FFFFFF;
   overflow: hidden; }
-
-.hero > .hero-text {
-  position: absolute;
-  text-align: center;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #FFFFFF;
-  z-index: 1; }
-
-.hero-text > h1 {
-  font-size: 6em;
-  white-space: nowrap;
-  font-family: 'Meddon', cursive; }
-
-.hero-text > h2 {
-  font-size: 1.25em;
-  font-family: 'Cinzel', serif; }
-
-.hero img {
-  width: 100%; }
+  .hero .hero-text {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    z-index: 1; }
+    .hero .hero-text h1 {
+      font-size: 6em;
+      white-space: nowrap;
+      font-family: 'Meddon', cursive; }
+    .hero .hero-text h2 {
+      font-size: 1.25em;
+      font-family: 'Cinzel', serif; }
+  .hero img {
+    width: 100%; }
 
 #lorem {
   margin-top: 5%;
@@ -68,62 +60,68 @@ header h2:hover {
   flex-direction: row;
   justify-content: space-around;
   font-family: 'Cinzel', serif;
-  text-align: justify; }
+  text-align: justify;
+  font-size: .75em; }
+  #lorem div {
+    width: 25%; }
+  #lorem h3 {
+    font-size: 1.5em;
+    font-family: 'Meddon', cursive;
+    color: #7a0408;
+    cursor: pointer;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 2%; }
+  #lorem h3:hover {
+    color: #c40b13; }
+  #lorem p {
+    text-align: left;
+    line-height: normal; }
 
 #sub-lorem {
   width: 60%;
   margin: 5% auto;
   font-family: 'Cinzel', serif;
-  text-align: justify; }
-
-#lorem div {
-  width: 25%; }
-
-#lorem, #sub-lorem {
+  text-align: justify;
   font-size: .75em; }
+  #sub-lorem h3 {
+    font-size: 1.5em;
+    font-family: 'Meddon', cursive;
+    color: #7a0408;
+    cursor: pointer;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 2%; }
+  #sub-lorem h3:hover {
+    color: #c40b13; }
+  #sub-lorem p {
+    text-align: left;
+    line-height: normal; }
 
-#lorem h3, #sub-lorem h3 {
-  font-size: 1.5em;
-  font-family: 'Meddon', cursive;
-  color: #7a0408;
-  cursor: pointer;
-  border-top: 1px solid #FFFFFF;
-  padding-top: 2%; }
-
-#lorem h3:hover, #sub-lorem h3:hover, span {
+span {
   color: #c40b13; }
-
-#lorem p #sub-lorem p {
-  text-align: left;
-  line-height: normal; }
 
 #contact {
   width: 80%;
   margin: 0 auto; }
-
-#contact > h1 {
-  font-size: 2em;
-  font-family: 'Meddon', cursive;
-  color: #7a0408;
-  padding-top: 2%; }
-
-#contact > h2 {
-  font-size: 1em;
-  font-family: 'Cinzel', serif;
-  color: #FFFFFF;
-  padding-top: 2%;
-  padding-bottom: 5%; }
+  #contact h1 {
+    font-size: 2em;
+    font-family: 'Meddon', cursive;
+    color: #7a0408;
+    padding-top: 2%; }
+  #contact h2 {
+    font-size: 1em;
+    font-family: 'Cinzel', serif;
+    color: #FFFFFF;
+    padding-top: 2%;
+    padding-bottom: 5%; }
 
 form {
   display: flex;
   align-items: center;
   flex-direction: column; }
-
-form > label {
-  font-family: 'Cinzel', serif; }
-
-form > input {
-  width: 40%; }
+  form label {
+    font-family: 'Cinzel', serif; }
+  form input {
+    width: 40%; }
 
 input[type="submit"] {
   width: 25%; }
@@ -139,13 +137,20 @@ input[type="submit"]:hover {
   font-family: 'Cinzel', serif; }
 
 footer {
+  background-color: #000000;
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   justify-content: center;
   margin-top: 200px;
   font-family: 'Meddon', cursive; }
-
-footer img {
-  height: 45px;
-  padding: 5px; }
+  footer img {
+    height: 45px;
+    padding: 5px; }
 
 footer:hover {
   cursor: pointer;

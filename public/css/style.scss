@@ -14,7 +14,7 @@ body {
   color: $white;
 }
 
-header, footer {
+header {
   background-color: $black;
   height: 55px;
   display: flex;
@@ -24,25 +24,20 @@ header, footer {
   position: sticky;
   top: 0;
   z-index: 2;
-}
-
-header img {
-  height: 45px;
-  padding-top: 5px;
-}
-
-header h2 {
-  color: $white;
-  font-size: .75em;
-}
-
-header h2, header img {
-  padding-right: 20px;
-}
-
-header h2:hover {
-  cursor: pointer;
-  color: #DDDDDD;
+  img {
+    height: 45px;
+    padding-top: 5px;
+    padding-right: 20px;
+  }
+  h2 {
+    color: $white;
+    font-size: .75em;
+    padding-right: 20px;
+  }
+  h2:hover {
+    cursor: pointer;
+    color: #DDDDDD;
+  }
 }
 
 .hero {
@@ -52,32 +47,30 @@ header h2:hover {
   position: relative;
   color: $white;
   overflow: hidden;
+
+  .hero-text {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    z-index: 1;
+    h1 {
+      font-size: 6em;
+      white-space: nowrap;
+      font-family: 'Meddon', cursive;
+    }
+    h2 {
+      font-size: 1.25em;
+      font-family: 'Cinzel', serif;
+    }
+  }
+  img {
+    width: 100%;
+  }
 }
 
-.hero > .hero-text {
-  position: absolute;
-  text-align: center;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: $white;
-  z-index: 1;
-}
-
-.hero-text > h1 {
-  font-size: 6em;
-  white-space: nowrap;
-  font-family: 'Meddon', cursive;
-}
-
-.hero-text > h2 {
-  font-size: 1.25em;
-  font-family: 'Cinzel', serif;
-}
-
-.hero img {
-  width: 100%;
-}
 
 #lorem {
   margin-top: 5%;
@@ -86,6 +79,25 @@ header h2:hover {
   justify-content: space-around;
   font-family: 'Cinzel', serif;
   text-align: justify;
+  font-size: .75em;
+  div {
+    width: 25%;
+  }
+  h3 {
+    font-size: 1.5em;
+    font-family: 'Meddon', cursive;
+    color: $dark-red;
+    cursor: pointer;
+    border-top: 1px solid $white;
+    padding-top: 2%;
+  }
+  h3:hover {
+    color: $light-red;
+  }
+  p {
+    text-align: left;
+    line-height: normal;
+  }
 }
 
 #sub-lorem {
@@ -93,66 +105,56 @@ header h2:hover {
   margin: 5% auto;
   font-family: 'Cinzel', serif;
   text-align: justify;
-}
-
-#lorem div {
-  width: 25%;
-}
-
-#lorem, #sub-lorem {
   font-size: .75em;
+  h3 {
+    font-size: 1.5em;
+    font-family: 'Meddon', cursive;
+    color: $dark-red;
+    cursor: pointer;
+    border-top: 1px solid $white;
+    padding-top: 2%;
+  }
+  h3:hover {
+    color: $light-red;
+  }
+  p {
+    text-align: left;
+    line-height: normal;
+  }
 }
 
-#lorem h3, #sub-lorem h3 {
-  font-size: 1.5em;
-  font-family: 'Meddon', cursive;
-  color: $dark-red;
-  cursor: pointer;
-  border-top: 1px solid $white;
-  padding-top: 2%;
-}
-
-#lorem h3:hover, #sub-lorem h3:hover, span {
+span {
   color: $light-red;
-}
-
-#lorem p #sub-lorem p {
-  text-align: left;
-  line-height: normal;
 }
 
 #contact {
   width: 80%;
   margin: 0 auto;
-}
-
-#contact > h1 {
-  font-size: 2em;
-  font-family: 'Meddon', cursive;
-  color: $dark-red;
-  padding-top: 2%;
-}
-
-#contact > h2 {
-  font-size: 1em;
-  font-family: 'Cinzel', serif;
-  color: $white;
-  padding-top: 2%;
-  padding-bottom: 5%;
+  h1 {
+    font-size: 2em;
+    font-family: 'Meddon', cursive;
+    color: $dark-red;
+    padding-top: 2%;
+  }
+  h2 {
+    font-size: 1em;
+    font-family: 'Cinzel', serif;
+    color: $white;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
 }
 
 form {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-form > label {
-  font-family: 'Cinzel', serif;
-}
-
-form > input {
-  width: 40%;
+  label {
+    font-family: 'Cinzel', serif;
+  }
+  input {
+    width: 40%;
+  }
 }
 
 input[type="submit"] {
@@ -172,14 +174,21 @@ input[type="submit"]:hover {
 }
 
 footer {
+  background-color: $black;
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   justify-content: center;
   margin-top: 200px;
   font-family: 'Meddon', cursive;
-}
-
-footer img {
-  height: 45px;
-  padding: 5px;
+  img {
+    height: 45px;
+    padding: 5px;
+  }
 }
 
 footer:hover {
