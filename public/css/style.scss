@@ -9,7 +9,7 @@ body {
   color: #FFFFFF;
 }
 
-header {
+header, footer {
   background-color: #000000;
   height: 55px;
   display: flex;
@@ -104,4 +104,15 @@ header h2:hover {
   font-size: .75em;
   text-align: left;
   line-height: normal;
+}
+
+footer {
+  justify-content: center;
+  margin-top: 200px;
+  font-family: 'Meddon', cursive;
+}
+
+footer img {
+  height: 45px;
+  padding: 5px;
 }
