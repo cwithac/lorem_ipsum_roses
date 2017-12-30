@@ -5,6 +5,18 @@ app.controller('MainController', ['$http', function($http){
   this.showLanding = true;
   this.showContact = false;
 
+  this.contactData = {};
+
+  this.submitContactForm = () => {
+    $http({
+      url: '/contacts',
+      method: 'POST',
+      data: this.contactData
+    }).then(response => {
+      console.log(response.data);
+    })
+  };
+
   this.showContactPage = () => {
     this.showLanding = false;
     this.showContact = true;
