@@ -270,6 +270,25 @@ footer:hover {
   #sub-lorem {
     width: 80%;
   }
+  #contact {
+    width: 90%;
+    h1 {
+      font-size: 1.25em;
+      margin-top: 5%;
+    }
+    h2, h6 {
+      width: 80%;
+      font-size: .5em
+    }
+  }
+  form {
+    input {
+      width: 80%;
+    }
+  }
+  #state {
+    background-color: $white;
+  }
 }
 
 @media (max-width:400px) {

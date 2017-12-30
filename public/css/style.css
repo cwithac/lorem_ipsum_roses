@@ -199,7 +199,22 @@ footer:hover {
       line-height: normal; }
 
   #sub-lorem {
-    width: 80%; } }
+    width: 80%; }
+
+  #contact {
+    width: 90%; }
+    #contact h1 {
+      font-size: 1.25em;
+      margin-top: 5%; }
+    #contact h2, #contact h6 {
+      width: 80%;
+      font-size: 0.5em; }
+
+  form input {
+    width: 80%; }
+
+  #state {
+    background-color: #FFFFFF; } }
 @media (max-width: 400px) {
   .hero {
     height: 200px; }
