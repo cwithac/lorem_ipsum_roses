@@ -1,3 +1,21 @@
+.header-footer, header, footer {
+  background-color: #000000;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  font-family: "Cinzel", serif;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+
+.lorem-h3, #lorem h3, #sub-lorem h3 {
+  font-size: 1.5em;
+  font-family: "Meddon", cursive;
+  color: #7a0408;
+  cursor: pointer;
+  border-top: 1px solid #FFFFFF;
+  padding-top: 2%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +26,7 @@ body {
   color: #FFFFFF; }
 
 header {
-  background-color: #000000;
-  height: 55px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: 'Cinzel', serif;
-  position: sticky;
-  top: 0;
-  z-index: 2; }
+  justify-content: flex-end; }
   header img {
     height: 45px;
     padding-top: 5px;
@@ -47,10 +57,10 @@ header {
     .hero .hero-text h1 {
       font-size: 6em;
       white-space: nowrap;
-      font-family: 'Meddon', cursive; }
+      font-family: "Meddon", cursive; }
     .hero .hero-text h2 {
       font-size: 1.25em;
-      font-family: 'Cinzel', serif; }
+      font-family: "Cinzel", serif; }
   .hero img {
     width: 100%; }
 
@@ -59,18 +69,11 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   text-align: justify;
   font-size: .75em; }
   #lorem div {
     width: 25%; }
-  #lorem h3 {
-    font-size: 1.5em;
-    font-family: 'Meddon', cursive;
-    color: #7a0408;
-    cursor: pointer;
-    border-top: 1px solid #FFFFFF;
-    padding-top: 2%; }
   #lorem h3:hover {
     color: #c40b13; }
   #lorem p {
@@ -80,16 +83,9 @@ header {
 #sub-lorem {
   width: 60%;
   margin: 5% auto;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   text-align: justify;
   font-size: .75em; }
-  #sub-lorem h3 {
-    font-size: 1.5em;
-    font-family: 'Meddon', cursive;
-    color: #7a0408;
-    cursor: pointer;
-    border-top: 1px solid #FFFFFF;
-    padding-top: 2%; }
   #sub-lorem h3:hover {
     color: #c40b13; }
   #sub-lorem p {
@@ -104,12 +100,12 @@ span {
   margin: 0 auto; }
   #contact h1 {
     font-size: 2em;
-    font-family: 'Meddon', cursive;
+    font-family: "Meddon", cursive;
     color: #7a0408;
     padding-top: 2%; }
   #contact h2 {
     font-size: 1em;
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     color: #FFFFFF;
     padding-top: 2%;
     padding-bottom: 5%; }
@@ -119,7 +115,7 @@ form {
   align-items: center;
   flex-direction: column; }
   form label {
-    font-family: 'Cinzel', serif; }
+    font-family: "Cinzel", serif; }
   form input {
     width: 40%; }
 
@@ -134,20 +130,12 @@ input[type="submit"]:hover {
   text-align: center;
   color: #7a0408;
   padding-top: 3%;
-  font-family: 'Cinzel', serif; }
+  font-family: "Cinzel", serif; }
 
 footer {
-  background-color: #000000;
-  height: 55px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 2;
   justify-content: center;
   margin-top: 200px;
-  font-family: 'Meddon', cursive; }
+  font-family: "Meddon", cursive; }
   footer img {
     height: 45px;
     padding: 5px; }

@@ -2,6 +2,28 @@ $dark-red: #7a0408;
 $light-red: #c40b13;
 $black: #000000;
 $white: #FFFFFF;
+$cinzel: 'Cinzel', serif;
+$meddon: 'Meddon', cursive;
+
+.header-footer {
+  background-color: $black;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  font-family: $cinzel;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.lorem-h3 {
+  font-size: 1.5em;
+  font-family: $meddon;
+  color: $dark-red;
+  cursor: pointer;
+  border-top: 1px solid $white;
+  padding-top: 2%;
+}
 
 * {
   margin: 0;
@@ -15,15 +37,8 @@ body {
 }
 
 header {
-  background-color: $black;
-  height: 55px;
-  display: flex;
+  @extend .header-footer;
   justify-content: flex-end;
-  align-items: center;
-  font-family: 'Cinzel', serif;
-  position: sticky;
-  top: 0;
-  z-index: 2;
   img {
     height: 45px;
     padding-top: 5px;
@@ -47,7 +62,6 @@ header {
   position: relative;
   color: $white;
   overflow: hidden;
-
   .hero-text {
     position: absolute;
     text-align: center;
@@ -59,11 +73,11 @@ header {
     h1 {
       font-size: 6em;
       white-space: nowrap;
-      font-family: 'Meddon', cursive;
+      font-family: $meddon;
     }
     h2 {
       font-size: 1.25em;
-      font-family: 'Cinzel', serif;
+      font-family: $cinzel;
     }
   }
   img {
@@ -77,19 +91,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-family: 'Cinzel', serif;
+  font-family: $cinzel;
   text-align: justify;
   font-size: .75em;
   div {
     width: 25%;
   }
   h3 {
-    font-size: 1.5em;
-    font-family: 'Meddon', cursive;
-    color: $dark-red;
-    cursor: pointer;
-    border-top: 1px solid $white;
-    padding-top: 2%;
+    @extend .lorem-h3;
   }
   h3:hover {
     color: $light-red;
@@ -103,16 +112,11 @@ header {
 #sub-lorem {
   width: 60%;
   margin: 5% auto;
-  font-family: 'Cinzel', serif;
+  font-family: $cinzel;
   text-align: justify;
   font-size: .75em;
   h3 {
-    font-size: 1.5em;
-    font-family: 'Meddon', cursive;
-    color: $dark-red;
-    cursor: pointer;
-    border-top: 1px solid $white;
-    padding-top: 2%;
+    @extend .lorem-h3;
   }
   h3:hover {
     color: $light-red;
@@ -132,13 +136,13 @@ span {
   margin: 0 auto;
   h1 {
     font-size: 2em;
-    font-family: 'Meddon', cursive;
+    font-family: $meddon;
     color: $dark-red;
     padding-top: 2%;
   }
   h2 {
     font-size: 1em;
-    font-family: 'Cinzel', serif;
+    font-family: $cinzel;
     color: $white;
     padding-top: 2%;
     padding-bottom: 5%;
@@ -150,7 +154,7 @@ form {
   align-items: center;
   flex-direction: column;
   label {
-    font-family: 'Cinzel', serif;
+    font-family: $cinzel;
   }
   input {
     width: 40%;
@@ -170,21 +174,14 @@ input[type="submit"]:hover {
   text-align: center;
   color: $dark-red;
   padding-top: 3%;
-  font-family: 'Cinzel', serif;
+  font-family: $cinzel;
 }
 
 footer {
-  background-color: $black;
-  height: 55px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 2;
+  @extend .header-footer;
   justify-content: center;
   margin-top: 200px;
-  font-family: 'Meddon', cursive;
+  font-family: $meddon;
   img {
     height: 45px;
     padding: 5px;
