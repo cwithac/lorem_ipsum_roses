@@ -72,20 +72,28 @@ header h2:hover {
 
 #sub-lorem {
   width: 60%;
-  margin: 0 auto;
+  margin: 5% auto;
   font-family: 'Cinzel', serif;
   text-align: justify; }
 
 #lorem div {
   width: 25%; }
 
+#lorem, #sub-lorem {
+  font-size: .75em; }
+
 #lorem h3, #sub-lorem h3 {
   font-size: 1.5em;
   font-family: 'Meddon', cursive;
-  color: #7a0408; }
+  color: #7a0408;
+  cursor: pointer;
+  border-top: 1px solid white;
+  padding-top: 2%; }
+
+#lorem h3:hover, #sub-lorem h3:hover, span {
+  color: #c40b13; }
 
 #lorem p #sub-lorem p {
-  font-size: .75em;
   text-align: left;
   line-height: normal; }
 
@@ -97,5 +105,9 @@ footer {
 footer img {
   height: 45px;
   padding: 5px; }
+
+footer:hover {
+  cursor: pointer;
+  color: #DDDDDD; }
 
 /*# sourceMappingURL=style.css.map */
