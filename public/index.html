@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body ng-controller='MainController as ctrl'>
-    
+    <header ng-include=" 'partials/header.html' "></header>
+    <main>
+      <section>
+      </section>
+      <section ng-view></section>
+    </main>
+    <footer ng-include=" 'partials/footer.html' "></footer>
   </body>
 </html>
