@@ -1,3 +1,8 @@
+$dark-red: #7a0408;
+$light-red: #c40b13;
+$black: #000000;
+$white: #FFFFFF;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +10,12 @@
 }
 
 body {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: $black;
+  color: $white;
 }
 
 header, footer {
-  background-color: #000000;
+  background-color: $black;
   height: 55px;
   display: flex;
   justify-content: flex-end;
@@ -27,7 +32,7 @@ header img {
 }
 
 header h2 {
-  color: #FFFFFF;
+  color: $white;
   font-size: .75em;
 }
 
@@ -45,7 +50,7 @@ header h2:hover {
   height: 500px;
   margin: 0 auto;
   position: relative;
-  color: #FFFFFF;
+  color: $white;
   overflow: hidden;
 }
 
@@ -55,7 +60,7 @@ header h2:hover {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #FFFFFF;
+  color: $white;
   z-index: 1;
 }
 
@@ -101,14 +106,14 @@ header h2:hover {
 #lorem h3, #sub-lorem h3 {
   font-size: 1.5em;
   font-family: 'Meddon', cursive;
-  color: #7a0408;
+  color: $dark-red;
   cursor: pointer;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid $white;
   padding-top: 2%;
 }
 
 #lorem h3:hover, #sub-lorem h3:hover, span {
-  color: #c40b13;
+  color: $light-red;
 }
 
 #lorem p #sub-lorem p {
@@ -124,14 +129,14 @@ header h2:hover {
 #contact > h1 {
   font-size: 2em;
   font-family: 'Meddon', cursive;
-  color: #7a0408;
+  color: $dark-red;
   padding-top: 2%;
 }
 
 #contact > h2 {
   font-size: 1em;
   font-family: 'Cinzel', serif;
-  color: #FFFFFF;
+  color: $white;
   padding-top: 2%;
   padding-bottom: 5%;
 }
@@ -156,12 +161,12 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   cursor: pointer;
-  color: #7a0408;
+  color: $dark-red;
 }
 
 #message {
   text-align: center;
-  color: #7a0408;
+  color: $dark-red;
   padding-top: 3%;
   font-family: 'Cinzel', serif;
 }
