@@ -7,6 +7,8 @@ app.controller('MainController', ['$http', function($http){
 
   this.contactData = {};
 
+  this.message = '';
+
   this.submitContactForm = () => {
     $http({
       url: '/contacts',
@@ -15,6 +17,7 @@ app.controller('MainController', ['$http', function($http){
     }).then(response => {
       console.log(response.data);
       this.contactData = {};
+      this.message = 'Thank you for your submission.'
     }, ex => {
       console.log(ex.data.err);
     }).catch(err => this.error = "404");
@@ -23,11 +26,13 @@ app.controller('MainController', ['$http', function($http){
   this.showContactPage = () => {
     this.showLanding = false;
     this.showContact = true;
+    this.message = '';
   };
 
   this.showLandingPage = () => {
     this.showLanding = true;
     this.showContact = false;
+    this.message = '';
   };
 
 }]); //

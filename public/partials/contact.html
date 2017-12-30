@@ -7,7 +7,7 @@
   <label for="last-name">Last Name</label>
   <input id="last-name" type="text" pattern="^[A-Za-z',]+$" placeholder="May only contain a-z, - and ' " ng-model="ctrl.contactData.lastName" required/></br>
   <label for="e-mail">E-Mail</label>
-  <input id="e-mail" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="E-Mail" ng-model="ctrl.contactData.email" required/></br>
+  <input id="e-mail" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Valid E-Mail Address" ng-model="ctrl.contactData.email" required/></br>
   <label for="zip-code">Zip Code</label>
   <input id="zip-code" type="text" pattern="^\d{5}(-\d{4})?$" placeholder="Zip Code" ng-model="ctrl.contactData.zipCode" required/></br>
   <label for="state">State</label>
@@ -67,6 +67,10 @@
       </br>
   <input type="Submit">
 </form>
+
+<h3 id="message">{{ctrl.message}}</h3>
+
+<!-- FORM VALIDATION REGEX -->
 <!-- http://www.freeformatter.com/usa-state-list-html-select.html -->
 <!-- https://www.w3schools.com/tags/att_input_pattern.asp -->
 <!-- https://stackoverflow.com/questions/160550/zip-code-us-postal-code-validation -->

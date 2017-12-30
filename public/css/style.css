@@ -132,6 +132,12 @@ input[type="submit"]:hover {
   cursor: pointer;
   color: #7a0408; }
 
+#message {
+  text-align: center;
+  color: #7a0408;
+  padding-top: 3%;
+  font-family: 'Cinzel', serif; }
+
 footer {
   justify-content: center;
   margin-top: 200px;
