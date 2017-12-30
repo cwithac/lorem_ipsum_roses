@@ -6,6 +6,7 @@
 
 body {
   background-color: #000000;
+  color: #FFFFFF;
 }
 
 header {
@@ -15,6 +16,9 @@ header {
   justify-content: flex-end;
   align-items: center;
   font-family: 'Cinzel', serif;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 header img {

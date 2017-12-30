@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #000000; }
+  background-color: #000000;
+  color: #FFFFFF; }
 
 header {
   background-color: #000000;
@@ -12,7 +13,10 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: 'Cinzel', serif; }
+  font-family: 'Cinzel', serif;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
 
 header img {
   height: 45px;
