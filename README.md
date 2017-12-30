@@ -6,10 +6,11 @@
 ## Technologies Used
 
 - NPM Express
-- MongoDB, Mongoose (GET/POST)
+- MongoDB, Mongoose
 - AngularJS (Routing, Partials)
 - Regex Form Validation
 - CSS SASS
+- Responsive Design
 
 ## Resources
 
@@ -28,6 +29,6 @@ _Create a (Page 1) landing page with the following elements: 1) sticky header (l
 
 _Set up a page (Page 2) contact containing a form. The form would have the following fields and corresponding validation: 1) First name – characters only, 2) Last name – characters, hyphens and apostrophes only, 3) Email – valid email addresses, 4) Zip code – US zip validation, 5) US States – a drop down list of states_
 
-_Additional Optional: Provide server-side code to store form fields data in the database._  [Database JSON](https://octogon-challenge.herokuapp.com/contacts/administrator)
+_Additional Optional: Provide server-side code to store form fields data in the database: [GET](https://octogon-challenge.herokuapp.com/contacts/administrator) & [POST](https://octogon-challenge.herokuapp.com/contact)_
 
 _Microsite Challenge completed for [Octagon](http://www.octagon.com/)._
