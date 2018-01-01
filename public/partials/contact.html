@@ -3,13 +3,13 @@
 
 <form ng-submit="ctrl.submitContactForm();">
   <label for="first-name">First Name</label>
-  <input id="first-name" type="text" pattern="^[a-zA-Z]+$" placeholder="May only contain a-z" ng-model="ctrl.contactData.firstName" required/></br>
+  <input id="first-name" type="text" pattern="^[a-zA-Z]+$" title="May only contain a-z" ng-model="ctrl.contactData.firstName" required/></br>
   <label for="last-name">Last Name</label>
-  <input id="last-name" type="text" pattern="^[A-Za-z'-]+$" placeholder="May only contain a-z, - and ' " ng-model="ctrl.contactData.lastName" required/></br>
+  <input id="last-name" type="text" pattern="^[A-Za-z'-]+$" title="May only contain a-z, - and ' " ng-model="ctrl.contactData.lastName" required/></br>
   <label for="e-mail">E-Mail</label>
-  <input id="e-mail" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Valid E-Mail Address" ng-model="ctrl.contactData.email" required/></br>
+  <input id="e-mail" type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Must follow format: username@subdomain.domain" ng-model="ctrl.contactData.email" required/></br>
   <label for="zip-code">Zip Code</label>
-  <input id="zip-code" type="text" pattern="^\d{5}(-\d{4})?$" placeholder="Zip Code" ng-model="ctrl.contactData.zipCode" required/></br>
+  <input id="zip-code" type="text" pattern="^\d{5}(-\d{4})?$" title="Must follow format: XXXXX or XXXXX-XXXX" ng-model="ctrl.contactData.zipCode" required/></br>
   <label for="state">State</label>
         <select required id="state" ng-model="ctrl.contactData.state">
         	<option value="AL">Alabama</option>
