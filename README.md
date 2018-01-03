@@ -23,7 +23,7 @@
 
 ![image](https://i.imgur.com/4FjZjzw.png)
 <br><br>
-![image](https://i.imgur.com/368wytU.png)
+![image](https://i.imgur.com/1gYPYjv.png)
 
 _Microsite Challenge - Requirements: Create two page responsive microsite._  
 
