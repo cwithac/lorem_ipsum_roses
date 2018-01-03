@@ -22,6 +22,8 @@
 
 
 ![image](https://i.imgur.com/4FjZjzw.png)
+<br><br>
+![image](https://i.imgur.com/368wytU.png)
 
 _Microsite Challenge - Requirements: Create two page responsive microsite._  
 
