@@ -1,7 +1,7 @@
 # Lorem Ipsum Roses
 
 [Hosted on Heroku](https://octogon-challenge.herokuapp.com/)<br>
-[GitHub Repository](https://github.com/cwithac/octagon_challenge)
+[GitHub Repository](https://github.com/cwithac/lorem_ipsum_roses)
 
 ## Technologies Used
 
