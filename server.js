@@ -12,6 +12,14 @@ app.use(express.static('public'));
 const contactsController = require('./controllers/contacts.js');
 app.use('/contacts', contactsController);
 
+app.get('/contact', async (req, res) => {
+  try {
+    res.redirect('/');
+  } catch (error) {
+    res.status(400).json({error: err.message});
+  }
+});
+
 const mongoURI  = process.env.MONGODB_URI || 'mongodb://localhost/octagon';
 mongoose.connect(mongoURI, { useMongoClient: true});
 mongoose.Promise = global.Promise;
