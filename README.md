@@ -5,12 +5,13 @@
 
 ## Technologies Used
 
-- NPM Express
+- Express NPM
 - MongoDB, Mongoose
 - AngularJS (Routing, Partials)
 - Regex Form Validation
 - CSS SASS
 - Responsive Design
+- Faker NPM (Seed Data)
 
 ## Resources
 
