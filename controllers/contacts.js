@@ -1,6 +1,6 @@
 const express = require('express');
 const contacts = express.Router();
-
+const faker = require('faker');
 const Contact = require('../models/contacts.js');
 
 contacts.get('/administrator', async (req, res) => {
@@ -16,6 +16,28 @@ contacts.post('/', async (req, res) => {
   try {
     const newContact = await Contact.create(req.body);
     res.status(200).json(newContact);
+  } catch (error) {
+    res.status(400).json({error: err.message});
+  }
+});
+
+const fakerData = [
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()},
+  {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.state()}
+];
+
+contacts.get('/seedFaker', async (req, res) => {
+  try {
+    const fakeContacts = await Contact.create(fakerData);
+    res.redirect('/contacts/administrator');
   } catch (error) {
     res.status(400).json({error: err.message});
   }
