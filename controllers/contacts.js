@@ -30,14 +30,14 @@ const fakerData = [];
     fakerData.push(fakerObject)
   };
 
-contacts.get('/seedFaker', async (req, res) => {
-  try {
-    const fakeContacts = await Contact.create(fakerData);
-    res.redirect('/contacts/administrator');
-  } catch (error) {
-    res.status(400).json({error: err.message});
-  }
-});
+// contacts.get('/seedFaker', async (req, res) => {
+//   try {
+//     const fakeContacts = await Contact.create(fakerData);
+//     res.redirect('/contacts/administrator');
+//   } catch (error) {
+//     res.status(400).json({error: err.message});
+//   }
+// });
 
 
 module.exports = contacts;
