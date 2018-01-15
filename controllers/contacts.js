@@ -22,53 +22,22 @@ contacts.post('/', async (req, res) => {
 });
 
 //Faker Data for Initial Seed - DISABLED for Live Site
-// const fakerData = [
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()},
-//   {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()}
-// ];
-//
-// contacts.get('/seedFaker', async (req, res) => {
-//   try {
-//     const fakeContacts = await Contact.create(fakerData);
-//     res.redirect('/contacts/administrator');
-//   } catch (error) {
-//     res.status(400).json({error: err.message});
-//   }
-// });
+
+const fakerData = [];
+
+  for (let i = 0; i < 100; i++) {
+    let fakerObject = {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()};
+    fakerData.push(fakerObject)
+  };
+
+contacts.get('/seedFaker', async (req, res) => {
+  try {
+    const fakeContacts = await Contact.create(fakerData);
+    res.redirect('/contacts/administrator');
+  } catch (error) {
+    res.status(400).json({error: err.message});
+  }
+});
 
 
 module.exports = contacts;
