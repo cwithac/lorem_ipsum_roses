@@ -26,8 +26,14 @@ contacts.post('/', async (req, res) => {
 const fakerData = [];
 
   for (let i = 0; i < 100; i++) {
-    let fakerObject = {firstName: faker.name.firstName(), lastName: faker.name.lastName(), email: faker.internet.email(), zipCode: faker.address.zipCode(), state: faker.address.stateAbbr()};
-    fakerData.push(fakerObject)
+    let fakerObject = {
+      firstName: faker.name.firstName(),
+      lastName: faker.name.lastName(),
+      email: faker.internet.email(),
+      zipCode: faker.address.zipCode(),
+      state: faker.address.stateAbbr()
+    };
+    fakerData.push(fakerObject);
   };
 
 // contacts.get('/seedFaker', async (req, res) => {
